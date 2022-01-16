@@ -12,7 +12,7 @@ function App() {
 
   useEffect(()=>{
     const getMyNfts = async () => {
-      const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=0x323D4AAA90660b7551214E2F9D79D0d2fFcb0E8c&order_direction=asc")
+      const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=<your address>&order_direction=asc")
       // console.log(openseaData.data.assets)
       setPunkListData(openseaData.data.assets);
     }
